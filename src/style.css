@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+header {
+  margin: 0;
+  height: 650px;
+  background-image: url(./banner.jpg);
+  background-size: cover;
+  display: flex;
+}
+.banner,
+.main-textbox {
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  z-index: 2;
+}
+.banner-overlay {
+  background-color: rgba(42, 43, 75, 0.8);
+  content: "";
+  height: 650px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.1s linear;
+  z-index: 0;
+}
+.overlay {
+  content: "";
+  height: 500px;
+  position: absolute;
+  top: 0;
+  transition: 0.2s ease-in;
+  z-index: 0;
+}
+.overlay:hover {
+  opacity: 0;
+}
+.left {
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+.right {
+  right: 0;
+  width: 100%;
+  z-index: -1;
+}
+.human {
+  background-color: #4acde499;
+}
+.city {
+  background-color: #b583cc99;
+}
+.mountains {
+  background-color: #bb533999;
+}
+.wolf {
+  background-color: #f5ab3499;
+}
+.metro {
+  background-color: #7567c599;
+}
+.photo {
+  background-color: #7ad88699;
+}
+.banner h1 {
+  margin: 0;
+  padding-bottom: 40px;
+  z-index: 2;
+}
+.banner-break {
+  flex-basis: 100%;
+  height: 0;
+  border-bottom: 3px white solid;
+  margin-bottom: 40px;
+  z-index: 2;
+}
+.banner-textbox {
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 25px;
+  flex-basis: 45%;
+  z-index: 2;
+}
+.banner-button {
+  display: flex;
+  align-content: center;
+  z-index: 2;
+}
+.get-started {
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  align-self: center;
+  border: 3px rgba(255, 255, 255, 0.637) solid;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 15px 30px;
+  transition: 0.2s ease-in;
+}
+.get-started:hover {
+  border: 3px solid #3c6eafe6;
+  color: #3c6eafe6;
+}
+h1 {
+  padding-left: 2 00px;
+  font-size: 60px;
+  font-weight: 900;
+  align-self: center;
+}
+.container,
+.container-reverse {
+  display: flex;
+}
+.container-reverse {
+  flex-direction: row-reverse;
+}
+.smaller-top,
+.bigger-top,
+.smaller-mid,
+.bigger-mid,
+.smaller-bottom,
+.bigger-bottom {
+  min-height: 500px;
+  padding-left: 100px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.smaller-top {
+  flex-basis: 40%;
+  background-image: url(./pic01.jpg);
+}
+
+.bigger-top {
+  flex-basis: 60%;
+  background-image: url(./pic02.jpg);
+}
+.smaller-mid {
+  flex-basis: 40%;
+  background-image: url(./pic04.jpg);
+}
+.bigger-mid {
+  flex-basis: 60%;
+  background-image: url(./pic03.jpg);
+}
+.smaller-bottom {
+  flex-basis: 40%;
+  background-image: url(./pic05.jpg);
+}
+.bigger-bottom {
+  flex-basis: 60%;
+  background-image: url(./pic06.jpg);
+}
+.title {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  border-bottom: 3px white solid;
+  flex-basis: 250px;
+  max-height: 40px;
+  padding-bottom: 20px;
+  z-index: 2;
+}
+.text {
+  margin-top: 20px;
+  display: block;
+  color: white;
+  font-weight: bold;
+  height: auto;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  z-index: 2;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
+  z-index: 2;
+}
+main {
+  padding: 0 200px;
+  height: 500px;
+  background-color: #2e3450;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+footer {
+  color: white;
+  margin: 0;
+  height: 200px;
+  background-color: #242943;
+  display: flex;
+  align-content: center;
+  padding: 0 200px;
+  flex-wrap: wrap;
+}
+main p {
+  padding: 20px 0;
+  font-size: 20px;
+  color: white;
+  line-height: 30px;
+}
+.icon {
+  color: #242943;
+  border-radius: 50px;
+  background-color: rgba(221, 221, 221, 0.774);
+  font-size: 25px;
+  padding: 15px;
+  align-self: center;
+  transition: 0.3s ease-in;
+}
+.wide {
+  margin-right: 20px;
+}
+.wide:last-child {
+  margin-right: 0;
+}
+footer p {
+  color: #676779;
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+.icon:hover {
+  background-color: white;
+}
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+.fa-facebook:hover {
+  color: #4267b2;
+}
+.fa-instagram:hover {
+  color: #bc2a8d;
+}
+.fa-linkedin:hover {
+  color: #2867b2;
+}
